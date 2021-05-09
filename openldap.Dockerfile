@@ -1,7 +1,5 @@
 FROM quay.io/centos/centos:7 AS build
 
-COPY ltb-project.repo /etc/yum.repos.d/ltb-project.repo
-
 RUN mkdir -p /mnt/rootfs
 RUN \
   yum install -y \
